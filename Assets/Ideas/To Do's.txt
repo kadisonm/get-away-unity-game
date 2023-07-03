@@ -2,7 +2,7 @@ Must do:
 - Levels
 - Timed survival
 - Police cars chasing
-- Main car
+(X) - Main car
 - Lose money on crash
 
 Quality of life improvements:
