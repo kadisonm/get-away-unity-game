@@ -1,0 +1,16 @@
+Must do:
+- Levels
+- Timed survival
+- Police cars chasing
+- Main car
+- Lose money on crash
+
+Quality of life improvements:
+- Power ups
+- Other 2 maps
+
+Extra content:
+- Different cars to unlock
+- Difference types of police cars
+- Parking garage and buildings
+- Civilian Cars

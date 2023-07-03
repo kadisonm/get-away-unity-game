@@ -1,0 +1,29 @@
+The Heist
+Style: Low poly cartoonish
+
+Main Ideas:
+- Getaway
+- Timed survival to get to next level
+- Levels (increasingly get longer)
+- Police cars chasing
+- Not touch anything (crash = lose money)
+- Levels
+- Different maps
+- Buy new cars
+- Can destroy the police cars (extra money/points)
+- Power ups
+- 5 minute survival time limit
+
+3 Levels (different maps):
+- House (Suburbs) - Sun rise
+- Mansion (Rich neighbourhood) - Sun rise
+- Bank (City) - At night
+
+Power ups:
+- Send 1 missile at a police car
+- Speed up
+- Invincibility power up (30 seconds)
+- Teleport to random spot
+ 
+
+
