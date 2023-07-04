@@ -25,5 +25,8 @@ Power ups:
 - Invincibility power up (30 seconds)
 - Teleport to random spot
  
-
-
+Police Car Personalities:
+- Aggressive, will go straight towards the player
+- Passive, will aim for just behind the player
+- Dumb, will aim in a random area around the player
+Every __interval__ the police cars will go back to spawn.

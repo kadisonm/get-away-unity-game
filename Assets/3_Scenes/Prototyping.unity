@@ -3536,6 +3536,11 @@ Transform:
   m_Father: {fileID: 263875576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1878132608 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7356867357348447796, guid: 7e14e6aacfa0f20449fcccf659756f74, type: 3}
+  m_PrefabInstance: {fileID: 1412297827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1899435169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,6 +3750,10 @@ PrefabInstance:
       propertyPath: MaxSpeed
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 1039411036510712576, guid: 54596ef1c3adddf438d05f107fa96deb, type: 3}
+      propertyPath: PlayerSphere
+      value: 
+      objectReference: {fileID: 1878132608}
     - target: {fileID: 1039411036510712577, guid: 54596ef1c3adddf438d05f107fa96deb, type: 3}
       propertyPath: m_Name
       value: Police Car

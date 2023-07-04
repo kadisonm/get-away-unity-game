@@ -26,7 +26,7 @@ public class EnemyPathfinding : MonoBehaviour
 
         Elapsed -= Car.CalculationRate;
 
-        NavMesh.CalculatePath(Car.SphereTransform.position, Car.Player.position, NavMesh.AllAreas, Path);
+        NavMesh.CalculatePath(Car.SphereTransform.position, Car.TargetPosition, NavMesh.AllAreas, Path);
         
         for (int i = 1; i < Path.corners.Length; ++i)
         {
