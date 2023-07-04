@@ -1,18 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Enemy Car;
+
+    private Rigidbody Body;
+
+    private bool Driving;
+
+    public void StartMotor()
     {
-        
+        Driving = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StopMotor()
     {
-        
+        Driving = false;
+    }
+    private void Awake()
+    {
+        Body = GetComponent<Rigidbody>();
+    }
+
+    private void FixedUpdate()
+    {
+        Body.maxAngularVelocity = Car.MaxSpeed;
+
+        if (Driving)
+            Body.AddTorque(-Car.Steering.transform.right * Car.Acceleration);
     }
 }

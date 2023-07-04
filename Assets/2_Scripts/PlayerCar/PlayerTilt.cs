@@ -1,26 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerTilt : MonoBehaviour
 {
-    [SerializeField] private float TiltAmount;
-    [SerializeField] private float MaxTiltThreshold;
-    [SerializeField] private GameObject Steering;
-
-    [SerializeField] private Transform Sphere;
-    [SerializeField] private Rigidbody SphereRigidbody;
+    [SerializeField] private Player Car;
 
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal") * TiltAmount;
+        float moveHorizontal = Input.GetAxis("Horizontal") * Car.TiltAmount;
 
-        if (transform.position != Sphere.position)
-            transform.position = Sphere.position;
+        if (transform.position != Car.SphereTransform.position)
+            transform.position = Car.SphereTransform.position;
 
-        float sphereVelocity = Mathf.Clamp(SphereRigidbody.velocity.magnitude, 0, MaxTiltThreshold);
-        float rotationMultiplier = sphereVelocity / MaxTiltThreshold;
+        float sphereVelocity = Mathf.Clamp(Car.SphereRigidbody.velocity.magnitude, 0, Car.MaxTiltThreshold);
+        float rotationMultiplier = sphereVelocity / Car.MaxTiltThreshold;
 
-        transform.localRotation = Quaternion.Euler(moveHorizontal * rotationMultiplier, Steering.transform.localEulerAngles.y, Steering.transform.localEulerAngles.z);
+        transform.localRotation = Quaternion.Euler(moveHorizontal * rotationMultiplier, Car.Steering.transform.localEulerAngles.y, Car.Steering.transform.localEulerAngles.z);
     }
 }

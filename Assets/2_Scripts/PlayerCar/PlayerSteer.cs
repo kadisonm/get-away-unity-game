@@ -1,17 +1,12 @@
-using UnityEngine;
-
+ using UnityEngine;
 public class PlayerSteer : MonoBehaviour
 {
-    [SerializeField] private float RotationSpeed;
-    [SerializeField] private float MaxTurnThreshold;
-
-    [SerializeField] private Transform Sphere;
-    [SerializeField] private Rigidbody SphereRigidbody;
+    [SerializeField] private Player Car;
 
     private void Update()
     {
-        if (transform.position != Sphere.position)
-            transform.position = Sphere.position;
+        if (transform.position != Car.SphereTransform.position)
+            transform.position = Car.SphereTransform.position;
 
         float moveVertical = Input.GetAxis("Vertical");
         float moveHorizontal = Input.GetAxis("Horizontal");
@@ -19,9 +14,9 @@ public class PlayerSteer : MonoBehaviour
         if (moveVertical < 0)
             moveHorizontal *= -1;
 
-        float sphereVelocity = Mathf.Clamp(SphereRigidbody.velocity.magnitude, 0, MaxTurnThreshold);
-        float rotationMultiplier = sphereVelocity / MaxTurnThreshold;
+        float sphereVelocity = Mathf.Clamp(Car.SphereRigidbody.velocity.magnitude, 0, Car.MaxTurnThreshold);
+        float rotationMultiplier = sphereVelocity / Car.MaxTurnThreshold;
 
-        transform.Rotate(0f, moveHorizontal * RotationSpeed * rotationMultiplier, 0f);
+        transform.Rotate(0f, moveHorizontal * Car.RotationSpeed * rotationMultiplier, 0f);
     }
 }
