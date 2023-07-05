@@ -2,31 +2,12 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    [SerializeField] private Enemy Car;
-
-    private Rigidbody Body;
-
-    private bool Driving;
-
-    public void StartMotor()
-    {
-        Driving = true;
-    }
-
-    public void StopMotor()
-    {
-        Driving = false;
-    }
-    private void Awake()
-    {
-        Body = GetComponent<Rigidbody>();
-    }
+    [SerializeField] private Enemy _car;
 
     private void FixedUpdate()
     {
-        Body.maxAngularVelocity = Car.MaxSpeed;
+        _car.SphereRigidbody.maxAngularVelocity = _car.MaxSpeed;
 
-        if (Driving)
-            Body.AddTorque(-Car.Steering.transform.right * Car.Acceleration);
+        _car.SphereRigidbody.AddTorque(-_car.Steering.transform.right * _car.Acceleration);
     }
 }
