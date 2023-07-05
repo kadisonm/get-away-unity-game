@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
     public float MaxSpeed;
     public float MaxReverseSpeed;
 
+    [Header("Robbery")]
+    public float ActivationDistance;
+
     public void SyncPositionToSphere(Transform transform)
     {
         if (transform.position != Sphere.transform.position)
