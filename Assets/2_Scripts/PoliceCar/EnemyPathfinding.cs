@@ -3,39 +3,30 @@ using UnityEngine.AI;
 
 public class EnemyPathfinding : MonoBehaviour
 {
-    [SerializeField] private Enemy Car;
+    [SerializeField] private Enemy _car;
 
-    private float Elapsed;
+    private float _elapsed;
 
-    private NavMeshPath Path;
+    private NavMeshPath _path;
 
     private void Awake()
     {
-        Elapsed = Car.CalculationRate;
-        Path = new NavMeshPath();
+        _elapsed = _car.CalculationRate;
+        _path = new NavMeshPath();
     }
 
     private void Update()
     {
-        Elapsed += Time.deltaTime;
+        _elapsed += Time.deltaTime;
 
-        if (Elapsed <= Car.CalculationRate)
-        {
+        if (_elapsed <= _car.CalculationRate)
             return;
-        }
 
-        Elapsed -= Car.CalculationRate;
+        _elapsed -= _car.CalculationRate;
 
-        NavMesh.CalculatePath(Car.SphereTransform.position, Car.TargetPosition, NavMesh.AllAreas, Path);
+        NavMesh.CalculatePath(_car.Sphere.transform.position, _car.TargetPosition, NavMesh.AllAreas, _path);
         
-        for (int i = 1; i < Path.corners.Length; ++i)
-        {
-            Debug.DrawLine(Path.corners[i - 1], Path.corners[i], Color.green, Car.CalculationRate);
-        }
-
-        if (Path.corners.Length > 0)
-            Car.Steering.LookTowards(Path.corners[1]);
-
-        Car.Movement.StartMotor();
+        if (_path.corners.Length > 0)
+            _car.SteeringController.LookTowards(_path.corners[1]);
     }
 }

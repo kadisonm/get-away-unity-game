@@ -2,31 +2,31 @@ using UnityEngine;
 
 public class EnemySteering : MonoBehaviour
 {
-    [SerializeField] private Enemy Car;
+    [SerializeField] private Enemy _car;
 
-    private Vector3 TargetRotation;
+    private Vector3 _targetRotation;
 
     public void LookTowards(Vector3 pos)
     {
-        TargetRotation = pos;
+        _targetRotation = pos;
     }
 
-    private void Awake()
+    private void Start()
     {
-        TargetRotation = Vector3.zero;
+        _targetRotation = Vector3.zero;
     }
 
     private void Update()
     {
-        Car.SyncPositionToSphere(transform);
+        _car.SyncPositionToSphere(transform);
 
-        Vector3 direction = (transform.position - TargetRotation).normalized;
+        Vector3 direction = (transform.position - _targetRotation).normalized;
 
         Quaternion lookRotation = Quaternion.LookRotation(direction, Vector3.up);
 
         lookRotation.x = 0;
         lookRotation.z = 0;
 
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Car.RotationSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, _car.RotationSpeed * Time.deltaTime);
     }
 }

@@ -2,18 +2,17 @@ using UnityEngine;
 
 public class PlayerTilt : MonoBehaviour
 {
-    [SerializeField] private Player Car;
+    [SerializeField] private Player _car;
 
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal") * Car.TiltAmount;
+        _car.SyncPositionToSphere(transform);
 
-        if (transform.position != Car.SphereTransform.position)
-            transform.position = Car.SphereTransform.position;
+        float moveHorizontal = Input.GetAxis("Horizontal") * _car.TiltAmount;
 
-        float sphereVelocity = Mathf.Clamp(Car.SphereRigidbody.velocity.magnitude, 0, Car.MaxTiltThreshold);
-        float rotationMultiplier = sphereVelocity / Car.MaxTiltThreshold;
+        float sphereVelocity = Mathf.Clamp(_car.SphereRigidbody.velocity.magnitude, 0, _car.MaxTiltThreshold);
+        float rotationMultiplier = sphereVelocity / _car.MaxTiltThreshold;
 
-        transform.localRotation = Quaternion.Euler(moveHorizontal * rotationMultiplier, Car.Steering.transform.localEulerAngles.y, Car.Steering.transform.localEulerAngles.z);
+        transform.localRotation = Quaternion.Euler(_car.Steering.transform.localEulerAngles.x, _car.Steering.transform.localEulerAngles.y, moveHorizontal * rotationMultiplier);
     }
 }

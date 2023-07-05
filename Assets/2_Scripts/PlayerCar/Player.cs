@@ -2,16 +2,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [HideInInspector] public Rigidbody SphereRigidbody;
+
+    [Header("Objects")]
+    public GameObject Steering;
+    public GameObject Sphere;
+
     [Header("Tilt")]
     public float TiltAmount;
     public float MaxTiltThreshold;
 
-    [Header("Sphere Object and Rigidbody")]
-    public Transform SphereTransform;
-    public Rigidbody SphereRigidbody;
-
     [Header("Steering")]
-    public GameObject Steering;
     public float RotationSpeed;
     public float MaxTurnThreshold;
 
@@ -19,4 +20,14 @@ public class Player : MonoBehaviour
     public float Acceleration;
     public float MaxSpeed;
     public float MaxReverseSpeed;
+
+    public void SyncPositionToSphere(Transform transform)
+    {
+        if (transform.position != Sphere.transform.position)
+            transform.position = Sphere.transform.position;
+    }
+    private void Awake()
+    {
+        SphereRigidbody = GetComponentInChildren<Rigidbody>();
+    }
 }

@@ -3,24 +3,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private Player Car; 
-
-    private Rigidbody Body;
-
-    private void Awake()
-    {
-        Body = GetComponent<Rigidbody>();
-    }
+    [SerializeField] private Player _car; 
 
     private void FixedUpdate()
     {
         float moveVertical = Input.GetAxis("Vertical");
 
-        Body.maxAngularVelocity = Car.MaxSpeed;
+        _car.SphereRigidbody.maxAngularVelocity = _car.MaxSpeed;
 
         if (moveVertical < 0)
-            Body.maxAngularVelocity = Car.MaxReverseSpeed;
+            _car.SphereRigidbody.maxAngularVelocity = _car.MaxReverseSpeed;
 
-        Body.AddTorque(Car.Steering.transform.forward * moveVertical * Car.Acceleration);
+        _car.SphereRigidbody.AddTorque(-_car.Steering.transform.right * moveVertical * _car.Acceleration);
     }
 }

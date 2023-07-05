@@ -1,12 +1,11 @@
  using UnityEngine;
 public class PlayerSteer : MonoBehaviour
 {
-    [SerializeField] private Player Car;
+    [SerializeField] private Player _car;
 
     private void Update()
     {
-        if (transform.position != Car.SphereTransform.position)
-            transform.position = Car.SphereTransform.position;
+        _car.SyncPositionToSphere(transform);
 
         float moveVertical = Input.GetAxis("Vertical");
         float moveHorizontal = Input.GetAxis("Horizontal");
@@ -14,9 +13,9 @@ public class PlayerSteer : MonoBehaviour
         if (moveVertical < 0)
             moveHorizontal *= -1;
 
-        float sphereVelocity = Mathf.Clamp(Car.SphereRigidbody.velocity.magnitude, 0, Car.MaxTurnThreshold);
-        float rotationMultiplier = sphereVelocity / Car.MaxTurnThreshold;
+        float sphereVelocity = Mathf.Clamp(_car.SphereRigidbody.velocity.magnitude, 0, _car.MaxTurnThreshold);
+        float rotationMultiplier = sphereVelocity / _car.MaxTurnThreshold;
 
-        transform.Rotate(0f, moveHorizontal * Car.RotationSpeed * rotationMultiplier, 0f);
+        transform.Rotate(0f, moveHorizontal * _car.RotationSpeed * rotationMultiplier, 0f);
     }
 }
