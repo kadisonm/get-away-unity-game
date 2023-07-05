@@ -57,18 +57,18 @@ public class Enemy : MonoBehaviour
         if (Randomise == true)
         { 
             AIPersonality = (Personality)Random.Range(0, 3);
-        }  
+        }
     }
 
     private void Update()
     {
         if (AIPersonality == Personality.Smart)
         {
-            TargetPosition = PlayerSphere.position + (-PlayerSteer.right * CutOffAmount);
+            TargetPosition = PlayerSphere.position + (-PlayerSteer.forward * CutOffAmount);
         }
         else if (AIPersonality == Personality.Passive)
         {
-            TargetPosition = PlayerSphere.position + (PlayerSteer.right * CutOffAmount);
+            TargetPosition = PlayerSphere.position + (PlayerSteer.forward * CutOffAmount);
         }
         else if (AIPersonality == Personality.Dumb)
         {

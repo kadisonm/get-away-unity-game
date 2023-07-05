@@ -26,7 +26,7 @@ public class EnemyPathfinding : MonoBehaviour
 
         NavMesh.CalculatePath(_car.Sphere.transform.position, _car.TargetPosition, NavMesh.AllAreas, _path);
         
-        if (_path.corners.Length > 0)
+        if (_path.corners.Length > 1)
             _car.SteeringController.LookTowards(_path.corners[1]);
     }
 }

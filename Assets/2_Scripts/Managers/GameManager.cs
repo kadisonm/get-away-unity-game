@@ -1,23 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
-
-    [SerializeField] private float RoundTime;
-
-    private enum GameState
+    public enum GameState
     {
         Menu,
         Playing,
     }
 
-    private GameState CurrentState;
+    public static GameManager Instance { get; private set; }
 
-    private float TimeRemaining;
+    public float ElapsedRoundTime { get; private set; }
+    public GameState CurrentState { get; private set; }
+
+    public int CollectedRoundMoney;
 
     private void Awake()
     {
@@ -47,18 +43,18 @@ public class GameManager : MonoBehaviour
     private void BeginRound()
     {
         CurrentState = GameState.Playing;
-        TimeRemaining = RoundTime;
+        MapManager.Instance.InitialiseBuildings();
+        ElapsedRoundTime = 0;
+        CollectedRoundMoney = 0;
     }
 
     private void UpdateRound()
     {
-        if (TimeRemaining > 0)
-        {
-            RoundTime -= Time.deltaTime;
-        }
-        else
-        {
+        ElapsedRoundTime += Time.deltaTime;
+    }
 
-        }
+    public void EndRound()
+    {
+        PlayerManager.Instance.AddRoundMoney(CollectedRoundMoney);
     }
 }

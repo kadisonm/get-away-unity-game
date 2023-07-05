@@ -1,9 +1,10 @@
 Must do:
-- Levels
-- Timed survival
-- Police cars chasing (Add personalities)
-(X) - Main car (Fix the direction of the rotation)
-- Lose money on crash
+- Maps
+- Infinite Survival
+(X) - Police cars chasing
+(X) - Main car
+- Lose health on crash
+- Be an escape vehicle and pick up criminals to make money
 
 Quality of life improvements:
 - Power ups
