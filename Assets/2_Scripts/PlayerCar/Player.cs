@@ -3,6 +3,12 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [HideInInspector] public Rigidbody SphereRigidbody;
+    [HideInInspector] public int CurrentHealth;
+    [HideInInspector] public PlayerHealth Health;
+
+    [Header("Damage and Health")]
+    public int PlayerMaxHealth;
+    public int ImmunityTime;
 
     [Header("Objects")]
     public GameObject Steering;
@@ -24,6 +30,9 @@ public class Player : MonoBehaviour
     [Header("Robbery")]
     public float ActivationDistance;
 
+    [Header("UI")]
+    public Vector3 HealthBarOffset;
+
     public void SyncPositionToSphere(Transform transform)
     {
         if (transform.position != Sphere.transform.position)
@@ -32,5 +41,6 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         SphereRigidbody = GetComponentInChildren<Rigidbody>();
+        Health = GetComponent<PlayerHealth>();
     }
 }

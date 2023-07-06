@@ -17,6 +17,9 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public EnemySteering SteeringController;
     [HideInInspector] public Rigidbody SphereRigidbody;
 
+    [Header("Damage")]
+    public int Damage;
+
     [Header("Objects")]
     public GameObject Player;
     public GameObject Steering;
@@ -33,7 +36,6 @@ public class Enemy : MonoBehaviour
     [Header("Movement")]
     public float Acceleration;
     public float MaxSpeed;
-    public float MaxReverseSpeed;
 
     [Header("Pathfinding")]
     public float CalculationRate;

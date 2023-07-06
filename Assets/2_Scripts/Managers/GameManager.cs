@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
 
+    public Player PlayerValues;
+
     public float ElapsedRoundTime { get; private set; }
     public GameState CurrentState { get; private set; }
 
@@ -55,6 +57,7 @@ public class GameManager : MonoBehaviour
 
     public void EndRound()
     {
-        PlayerManager.Instance.AddRoundMoney(CollectedRoundMoney);
+
+
     }
 }

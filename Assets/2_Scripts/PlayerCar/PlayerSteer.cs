@@ -1,8 +1,9 @@
- using UnityEngine;
+using UnityEngine;
+
 public class PlayerSteer : MonoBehaviour
 {
     [SerializeField] private Player _car;
-
+    
     private void Update()
     {
         _car.SyncPositionToSphere(transform);
