@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
 
     public void EndRound()
     {
-
+        Time.timeScale = 0.2f;
 
     }
 }
