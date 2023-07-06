@@ -16,11 +16,13 @@ public class Heist : MonoBehaviour
     public int Cooldown;
     public int RollInterval;
 
-    [HideInInspector] public bool inProgress;
+    [HideInInspector]  public string Announcement;
+
+    [HideInInspector] public bool InProgress;
 
     [Range(0, 10)][SerializeField] private int _robberyChance;
 
-    [SerializeField] private HeistState _state = HeistState.Cooldown;
+    private HeistState _state = HeistState.Cooldown;
     private float _cooldownTimer;
     private float _rollTimer;
     private float _progressTimer;
@@ -49,6 +51,9 @@ public class Heist : MonoBehaviour
         if (_cooldownTimer < Cooldown)
         {
             _cooldownTimer += Time.deltaTime;
+
+            Announcement = "Cooldown<br>" + Mathf.Round(Cooldown - _cooldownTimer);
+
             return;
         }
 
@@ -61,6 +66,9 @@ public class Heist : MonoBehaviour
         if (_rollTimer < RollInterval)
         {
             _rollTimer += Time.deltaTime;
+
+            Announcement = "No Heist In Progress";
+
             return;
         }
 
@@ -79,12 +87,14 @@ public class Heist : MonoBehaviour
         if (_progressTimer < AvailabilityTime)
         {
             _progressTimer += Time.deltaTime;
-            inProgress = true;
+            InProgress = true;
+
+            Announcement = "Heist in progress!<br>" + Mathf.Round(AvailabilityTime - _progressTimer);
 
             return;
         }
 
-        inProgress = false;
+        InProgress = false;
         _progressTimer = 0;
         _state = HeistState.Cooldown;
     }
@@ -93,7 +103,7 @@ public class Heist : MonoBehaviour
     {
         if (_state == HeistState.InProgress)
         {
-            inProgress = false;
+            InProgress = false;
             _progressTimer = 0;
             _state = HeistState.Cooldown;
 
@@ -103,5 +113,12 @@ public class Heist : MonoBehaviour
         {
             return 0;
         }
+    }
+
+    public string GetTimer()
+    {
+        float remainingTime = Mathf.Round(Cooldown - _cooldownTimer);
+
+        return "" + remainingTime;
     }
 }
