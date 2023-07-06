@@ -2660,7 +2660,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6583099140309855040, guid: ad2621efae61bf942b32f82be8aaaf7c, type: 3}
       propertyPath: m_Name
-      value: Map Manager
+      value: -- Map Manager --
       objectReference: {fileID: 0}
     - target: {fileID: 6583099140309855041, guid: ad2621efae61bf942b32f82be8aaaf7c, type: 3}
       propertyPath: m_RootOrder

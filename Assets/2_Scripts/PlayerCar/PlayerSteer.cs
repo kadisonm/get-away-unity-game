@@ -17,6 +17,6 @@ public class PlayerSteer : MonoBehaviour
         float sphereVelocity = Mathf.Clamp(_car.SphereRigidbody.velocity.magnitude, 0, _car.MaxTurnThreshold);
         float rotationMultiplier = sphereVelocity / _car.MaxTurnThreshold;
 
-        transform.Rotate(0f, moveHorizontal * _car.RotationSpeed * rotationMultiplier, 0f);
+        transform.Rotate(0f, moveHorizontal * _car.RotationSpeed * rotationMultiplier * Time.deltaTime, 0f);
     }
 }

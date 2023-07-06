@@ -33,6 +33,9 @@ public class Player : MonoBehaviour
     [Header("UI")]
     public Vector3 HealthBarOffset;
 
+    [Header("Camera")]
+    public Vector3 CameraOffset;
+
     public void SyncPositionToSphere(Transform transform)
     {
         if (transform.position != Sphere.transform.position)
