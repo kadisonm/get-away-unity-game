@@ -59,5 +59,6 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0.2f;
 
+        UIManager.Instance.OpenDeathScreen();
     }
 }

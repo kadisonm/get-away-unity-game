@@ -24,8 +24,6 @@ public class EnemyPathfinding : MonoBehaviour
 
         _elapsed -= _car.CalculationRate;
 
-        Debug.Log(_car.TargetPosition);
-
         NavMesh.CalculatePath(_car.Sphere.transform.position, _car.TargetPosition, NavMesh.AllAreas, _path);
         
         if (_path.corners.Length > 1)
