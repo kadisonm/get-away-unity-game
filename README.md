@@ -5,3 +5,5 @@ A game made during Year 10 work experience at Mini Mammoth Games.
 
 3D Modelled by Ethan McPhee
 Programmed by Kadison McLellan
+
+*This repository will be read only.*
