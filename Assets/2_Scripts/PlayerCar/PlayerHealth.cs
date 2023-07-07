@@ -15,6 +15,8 @@ public class PlayerHealth : MonoBehaviour
     {
         int newHealth = _car.CurrentHealth - amount;
 
+        SoundManager.Instance.PlaySound(SoundManager.Instance.HitSound);
+
         _car.CurrentHealth = Mathf.Clamp(newHealth, 0, _car.PlayerMaxHealth);
 
         if (_car.CurrentHealth <= 0)
