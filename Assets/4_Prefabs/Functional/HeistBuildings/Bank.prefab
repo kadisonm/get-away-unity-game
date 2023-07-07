@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 3212253587644506401}
   - component: {fileID: 3212253587644506402}
   - component: {fileID: 3212253587644506403}
+  - component: {fileID: -5420745879285460761}
   m_Layer: 0
   m_Name: Bank
   m_TagString: Untagged
@@ -410,6 +411,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.3429427, y: 12.27, z: 9.02783}
   m_Center: {x: -0.51516455, y: 2.87, z: -0.06472397}
+--- !u!208 &-5420745879285460761
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3212253587644506412}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.535, y: 6.715, z: 8.7}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3212253587883186573
 GameObject:
   m_ObjectHideFlags: 0

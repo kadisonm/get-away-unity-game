@@ -14,6 +14,6 @@ public class PlayerMovement : MonoBehaviour
         if (moveVertical < 0)
             _car.SphereRigidbody.maxAngularVelocity = _car.MaxReverseSpeed;
 
-        _car.SphereRigidbody.AddTorque(-_car.Steering.transform.right * moveVertical * _car.Acceleration);
+        _car.SphereRigidbody.AddTorque(-_car.Steering.transform.right * (moveVertical * _car.Acceleration));
     }
 }

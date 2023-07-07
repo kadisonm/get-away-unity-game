@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     public int Damage;
 
     [Header("Objects")]
-    public GameObject Player;
+    [HideInInspector] public GameObject Player;
     public GameObject Steering;
     public GameObject Sphere;
 
@@ -48,6 +48,7 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        Player = GameManager.Instance.Player;
         SphereRigidbody = GetComponentInChildren<Rigidbody>();
         SteeringController = GetComponentInChildren<EnemySteering >();
         PlayerSphere = Player.GetComponent<Player>().Sphere.transform;

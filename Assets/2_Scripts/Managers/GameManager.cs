@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
 
-    public Player PlayerValues;
+    public GameObject Player;
+    [HideInInspector] public Player PlayerValues;
 
     public float ElapsedRoundTime { get; private set; }
     public GameState CurrentState { get; private set; }
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
+
+        PlayerValues = Player.GetComponent<Player>();
     }
 
     private void Start()

@@ -1544,10 +1544,10 @@ MonoBehaviour:
   Sphere: {fileID: 7684962588376013619}
   TiltAmount: 15
   MaxTiltThreshold: 8
-  RotationSpeed: 0.6
+  RotationSpeed: 200
   MaxTurnThreshold: 8
   Acceleration: 30
-  MaxSpeed: 20
+  MaxSpeed: 25
   MaxReverseSpeed: 10
   ActivationDistance: 10
   HealthBarOffset: {x: -3, y: 0, z: 0}

@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     public float Acceleration;
     public float MaxSpeed;
     public float MaxReverseSpeed;
+    public float DriftFriction;
 
     [Header("Robbery")]
     public float ActivationDistance;
@@ -45,5 +46,7 @@ public class Player : MonoBehaviour
     {
         SphereRigidbody = GetComponentInChildren<Rigidbody>();
         Health = GetComponent<PlayerHealth>();
+
+        SphereRigidbody.angularDrag = DriftFriction;
     }
 }
