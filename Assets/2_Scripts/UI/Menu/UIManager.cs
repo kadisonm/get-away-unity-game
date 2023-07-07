@@ -41,12 +41,14 @@ public class UIManager : MonoBehaviour
 
     public void OpenMenu()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.UISelect);
         _menuUI.SetActive(true);
         Time.timeScale = 0;
     }
 
     public void CloseMenu()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.UISelect);
         _menuUI.SetActive(false);
         Time.timeScale = 1;
 
@@ -54,12 +56,14 @@ public class UIManager : MonoBehaviour
 
     public void LoadMenu()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.UISelect);
         SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
 
     public void PlayGame()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.UISelect);
         SceneManager.LoadScene(1);
         Time.timeScale = 1f;
     }

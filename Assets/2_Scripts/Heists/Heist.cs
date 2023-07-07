@@ -107,6 +107,8 @@ public class Heist : MonoBehaviour
             _progressTimer = 0;
             _state = HeistState.Cooldown;
 
+            SoundManager.Instance.PlaySound(SoundManager.Instance.MoneyCollect);
+
             return EarnableMoney;
         } 
         else
