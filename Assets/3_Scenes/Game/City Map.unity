@@ -659,6 +659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 758067939}
   - component: {fileID: 758067941}
+  - component: {fileID: 758067942}
   - component: {fileID: 758067940}
   m_Layer: 5
   m_Name: Money
@@ -784,6 +785,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758067938}
   m_CullTransparentMesh: 1
+--- !u!114 &758067942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758067938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ccc0d77914adaf49a32ac7c69e7a5ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884398819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1827,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555935972}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -2387,6 +2400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950791715}
   - component: {fileID: 1950791717}
+  - component: {fileID: 1950791718}
   - component: {fileID: 1950791716}
   m_Layer: 5
   m_Name: Time
@@ -2512,6 +2526,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950791714}
   m_CullTransparentMesh: 1
+--- !u!114 &1950791718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950791714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e17d10bac6a694c954627120cbcb63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1991220995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 201564609026865395, guid: d5343795bb5fd3d4eb57b0d33088f6ad, type: 3}
