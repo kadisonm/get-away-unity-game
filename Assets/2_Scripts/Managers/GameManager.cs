@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
         {
             UpdateRound();
         }
-        
     }
 
     private void BeginRound()
@@ -59,5 +58,6 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0.2f;
 
+        UIManager.Instance.OpenDeathScreen();
     }
 }
