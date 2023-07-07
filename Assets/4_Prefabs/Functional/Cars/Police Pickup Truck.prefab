@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3587550646168025313}
   - component: {fileID: 3587550646657017954}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 6045818574081303083}
   - component: {fileID: 8241117307440999898}
   - component: {fileID: 6045818574081303084}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 6045818575160058222}
   - component: {fileID: 6045818575160058216}
   - component: {fileID: 6045818575160058223}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Police Pickup Truck
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 6045818575826017201}
   - component: {fileID: 6045818575826017200}
   - component: {fileID: 6045818575826017227}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Steering
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,6 +370,70 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3587550646168025313}
     m_Modifications:
+    - target: {fileID: 27436125641126335, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 102606179625834018, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 183150172912783721, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 700037343875650505, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 869982359921956684, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 899471193669611594, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 948747122258498366, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670882806102932850, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982941814242394768, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2117155689755942053, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034227217803010840, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5049881360286875226, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206823485478508364, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236378728030107838, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7015108310547750968, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529903587906903083, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8297700565202606001, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -380,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8297700565202606001, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.429
+      value: -0.276
       objectReference: {fileID: 0}
     - target: {fileID: 8297700565202606001, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -414,9 +478,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8594198454330487949, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8677462451740331275, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
       propertyPath: m_Name
       value: Police Pickup Truck Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677462451740331275, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160744138177167934, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59f499b4a91f8bc48af0c82207855ac0, type: 3}

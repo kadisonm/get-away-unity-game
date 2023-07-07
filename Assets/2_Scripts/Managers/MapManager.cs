@@ -52,7 +52,6 @@ public class MapManager : MonoBehaviour
             {
                 InstantiatePlot(DefaultHeist, Plots[takenPlots]);
 
-                Debug.Log("Room left adding default");
                 takenPlots++;
             }
         }

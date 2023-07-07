@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6618165201000825427}
   - component: {fileID: 7275088124590817748}
   - component: {fileID: 5156839442152774302}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 718547305202913050}
   - component: {fileID: 6361948941289710669}
   - component: {fileID: 5473444644500767821}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 2173067007436041323}
   - component: {fileID: 2173067007436041317}
   - component: {fileID: 2173067007436041316}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 2173067007848632762}
   - component: {fileID: 2173067007848632761}
   - component: {fileID: 2173067007848632760}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 2173067008056596348}
   - component: {fileID: 2173067008056596349}
   - component: {fileID: 2173067008056596350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 2173067008589652128}
   - component: {fileID: 2173067008589652135}
   - component: {fileID: 2173067008589652129}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 2173067008700666739}
   - component: {fileID: 2173067008700666733}
   - component: {fileID: 2173067008700666732}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2340218919410876253}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player Car Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -593,7 +593,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3112532811254490599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.24, z: 0}
+  m_LocalPosition: {x: 0, y: -0.124, z: 0}
   m_LocalScale: {x: 0.40407693, y: 0.4040769, z: 0.40407693}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 1444395608702919736}
   - component: {fileID: 7923757779519689382}
   - component: {fileID: 1797176340225330809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 7238612268281276761}
   - component: {fileID: 6668073140763557900}
   - component: {fileID: 909635009041873136}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 5288255698487075670}
   - component: {fileID: 5928954556713746333}
   - component: {fileID: 5991367581414453704}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ GameObject:
   - component: {fileID: 8823484863608982119}
   - component: {fileID: 2231282378248161447}
   - component: {fileID: 5030936990031130636}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -953,7 +953,7 @@ GameObject:
   - component: {fileID: 7576702753083578511}
   - component: {fileID: 1024236794310244198}
   - component: {fileID: 5865290444079742843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 2259429742556414235}
   - component: {fileID: 770274597632402230}
   - component: {fileID: 5496923796714650279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   - component: {fileID: 7589131810438402930}
   - component: {fileID: 7293375717384973355}
   - component: {fileID: 2908303454551175951}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1203,7 +1203,8 @@ GameObject:
   - component: {fileID: 7470790894751655132}
   - component: {fileID: 7470790894751655133}
   - component: {fileID: 7470790894751655131}
-  m_Layer: 0
+  - component: {fileID: 6011244293087203412}
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1248,7 +1249,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -1289,6 +1290,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _car: {fileID: 1012263133310331320}
+--- !u!114 &6011244293087203412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470790894751655107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &7684962586631332522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,7 +1335,7 @@ GameObject:
   - component: {fileID: 7684962586631332527}
   - component: {fileID: 7684962586631332526}
   - component: {fileID: 7684962586631332525}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Steering
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1432,7 @@ GameObject:
   - component: {fileID: 7684962586770011217}
   - component: {fileID: 7684962586770011216}
   - component: {fileID: 7684962586770011230}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1496,7 +1530,7 @@ GameObject:
   - component: {fileID: 1012263133310331320}
   - component: {fileID: 7684962587298830454}
   - component: {fileID: 8660596958793709814}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,6 +1583,7 @@ MonoBehaviour:
   Acceleration: 30
   MaxSpeed: 25
   MaxReverseSpeed: 10
+  DriftFriction: 0
   ActivationDistance: 10
   HealthBarOffset: {x: -3, y: 0, z: 0}
   CameraOffset: {x: 0, y: 10, z: 10}
@@ -1593,7 +1628,7 @@ GameObject:
   - component: {fileID: 7684962588376013622}
   - component: {fileID: 7684962588376013621}
   - component: {fileID: 8660596957723933617}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
