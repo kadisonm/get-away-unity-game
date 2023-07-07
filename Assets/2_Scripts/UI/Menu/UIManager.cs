@@ -77,7 +77,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeCanvasGroup(CanvasGroup canvasGroup, float start, float end, float lerpTime = 1, float delay = 0)
+    public IEnumerator FadeCanvasGroup(CanvasGroup canvasGroup, float start, float end, float lerpTime = .5f, float delay = 0)
 	{
         yield return new WaitForSecondsRealtime(delay);
 
